@@ -3,7 +3,6 @@
 ## File structure
 
 ```
-❯ tree
 .
 ├── example1        # Most simple way with one file only
 │   ├── main.yaml
@@ -13,12 +12,26 @@
 │   ├── run.sh
 │   └── vars.yaml
 └── example3        # Example with using inventory file and group_vars
+│   ├── group_vars
+│   │   └── group_a
+│   │       └── anyname.yaml
+│   ├── hosts.yaml
+│   ├── main.yaml
+│   └── run.sh
+└── example4        # Same as example3 but with using role
     ├── group_vars
     │   └── group_a
     │       └── anyname.yaml
     ├── hosts.yaml
     ├── main.yaml
+    ├── roles
+    │   └── role_a
+    │       └── tasks
+    │           └── main.yaml
     └── run.sh
+
+
+❯ tree
 
 ```
 
@@ -34,5 +47,8 @@ cd $dir/example2
 ./run.sh
 
 cd $dir/example3
+./run.sh
+
+cd $dir/example4
 ./run.sh
 ```

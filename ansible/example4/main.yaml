@@ -1,0 +1,4 @@
+- hosts: localhost
+  connection: group_a
+  roles:
+    - role_a
