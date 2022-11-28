@@ -3,6 +3,7 @@
 ## File structure
 
 ```
+❯ tree
 .
 ├── example1        # Most simple way with one file only
 │   ├── main.yaml
@@ -29,10 +30,6 @@
     │       └── tasks
     │           └── main.yaml
     └── run.sh
-
-
-❯ tree
-
 ```
 
 ## How to use
