@@ -1,5 +1,7 @@
 # Examples for ansible
 
+## File structure
+
 ```
 ❯ tree
 .
@@ -18,4 +20,19 @@
     ├── main.yaml
     └── run.sh
 
+```
+
+## How to use
+
+```
+dir=$(pwd)
+
+cd $dir/example1
+./run.sh
+
+cd $dir/example2
+./run.sh
+
+cd $dir/example3
+./run.sh
 ```
